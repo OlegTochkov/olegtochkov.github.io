@@ -1,0 +1,65 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page94752316.html
+
+RewriteEngine On
+
+RewriteRule ^calculator$ page96390686.html [NC]
+RewriteRule ^calculator/$ page96390686.html [NC]
+
+RewriteRule ^repair$ page116382096.html [NC]
+RewriteRule ^repair/$ page116382096.html [NC]
+
+RewriteRule ^order$ page98809316.html [NC]
+RewriteRule ^order/$ page98809316.html [NC]
+
+RewriteRule ^srochnaya$ page116428536.html [NC]
+RewriteRule ^srochnaya/$ page116428536.html [NC]
+
+RewriteRule ^supportive$ page116427516.html [NC]
+RewriteRule ^supportive/$ page116427516.html [NC]
+
+RewriteRule ^privacy$ page111068156.html [NC]
+RewriteRule ^privacy/$ page111068156.html [NC]
+
+RewriteRule ^standart$ page116428216.html [NC]
+RewriteRule ^standart/$ page116428216.html [NC]
+
+RewriteRule ^qr$ page123781366.html [NC]
+RewriteRule ^qr/$ page123781366.html [NC]
+
+RewriteRule ^price$ page116428896.html [NC]
+RewriteRule ^price/$ page116428896.html [NC]
+
+RewriteRule ^general-cleaning$ page116389996.html [NC]
+RewriteRule ^general-cleaning/$ page116389996.html [NC]
+
+RewriteRule ^windows$ page116402906.html [NC]
+RewriteRule ^windows/$ page116402906.html [NC]
+
+RewriteRule ^posle-smerti$ page116410156.html [NC]
+RewriteRule ^posle-smerti/$ page116410156.html [NC]
+
+RewriteRule ^posle-pojara$ page116411816.html [NC]
+RewriteRule ^posle-pojara/$ page116411816.html [NC]
+
+RewriteRule ^posle-potopa$ page116412736.html [NC]
+RewriteRule ^posle-potopa/$ page116412736.html [NC]
+
+RewriteRule ^mebel$ page116414506.html [NC]
+RewriteRule ^mebel/$ page116414506.html [NC]
+
+RewriteRule ^divany$ page116421906.html [NC]
+RewriteRule ^divany/$ page116421906.html [NC]
+
+RewriteRule ^carpet-cleaning$ page116426206.html [NC]
+RewriteRule ^carpet-cleaning/$ page116426206.html [NC]
+
+RewriteRule ^matrasy$ page116426506.html [NC]
+RewriteRule ^matrasy/$ page116426506.html [NC]
+
+<IfModule mod_headers.c>
+	Header unset X-Frame-Options
+</IfModule>
+

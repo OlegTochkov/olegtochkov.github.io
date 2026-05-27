@@ -1,0 +1,83 @@
+---
+alwaysApply: true
+---
+
+# Workflow rules
+
+## UI preservation: 1:1 fidelity
+
+The migrated site must look and behave **identically** to the original Tilda site on `cleanlogic.by`.
+
+- Do not improve UX, restructure layouts, change colors, swap icons, reorder content, or rewrite copy unless the user explicitly approves.
+- Pixel-perfect by default. Visual deviations from the Tilda original are bugs.
+- The reference for "what is correct" is the live site at `cleanlogic.by` and the local `tilda_export/` archive.
+
+## Bugs and issues: report, do not fix
+
+If you discover any of the following while working on a task:
+
+- Broken links, missing images, 404 references.
+- Form fields that do not work as expected.
+- Console errors or warnings.
+- Mobile layout problems.
+- Accessibility issues (missing alt, missing labels, color contrast).
+- Performance bottlenecks.
+- Tilda residue that should have been cleaned earlier.
+
+**Report them to the user without fixing.** The user decides whether the issue goes into the backlog. This applies even to seemingly trivial issues — the principle is "no surprise edits."
+
+## Destructive or wide-impact actions: confirm first
+
+Before performing any of the following, ask the user for explicit confirmation:
+
+- Deleting files or directories.
+- Renaming many files at once (>5).
+- Running `git reset`, `git rebase`, `git push --force`, or any command that rewrites history.
+- Installing new dependencies that are not yet documented in `docs/TECH_STACK.md`.
+- Running formatters, linters with auto-fix, or codemods that modify many files at once.
+- Changing the project configuration (`astro.config.mjs`, `package.json` scripts, `tsconfig.json`).
+
+## Documentation references
+
+At the start of any non-trivial task, consult the relevant documents:
+
+- For migration work: `docs/MIGRATION_PLAN.md`, `.cursor/rules/tilda-migration.mdc`.
+- For technical decisions: `docs/TECH_STACK.md`.
+- For business context: `docs/PROJECT_OVERVIEW.md`, `docs/BUSINESS_GOALS.md`.
+- For deleted Tilda scripts: `docs/legacy/`.
+- For terminology: `docs/glossary.md`.
+
+If you find that a document is missing context needed for the task, propose an update to the user rather than guessing.
+
+## Language convention
+
+- Cursor configuration (`.cursor/rules/*.mdc`, `.cursor/agents/*.md`) — **English**.
+- Business docs (`docs/PROJECT_OVERVIEW.md`, `docs/BUSINESS_GOALS.md`, `docs/glossary.md`, `docs/legacy/*.md`) — **Russian**.
+- Technical docs (`docs/TECH_STACK.md`, `docs/MIGRATION_PLAN.md`, `docs/ROADMAP.md`) — **English**.
+- Root `README.md` — **English**.
+- Commit messages — **English**, concise, present tense imperative ("Add header component", not "Added header component").
+
+## Solo developer context
+
+This project is maintained by a single developer (Maxim) working through Cursor.
+
+- Avoid team-oriented conventions (PR templates, code review workflows, shared style guides for teammates).
+- Optimize the workflow and documentation for one person operating the project via Cursor.
+
+## Phase-based work
+
+Migration progresses through phases defined in `docs/MIGRATION_PLAN.md`. At the start of each phase, the user creates a detailed sub-plan via Cursor's Plan mode. Do not jump ahead to a later phase without explicit instruction.
+
+Each phase ends with:
+
+1. A `bug-hunter` scan with zero critical findings in scope.
+2. A Git commit summarizing what changed.
+3. A brief status update in `docs/MIGRATION_PLAN.md` if needed.
+
+## Effort and Max Mode guidance
+
+When suggesting work intensity:
+
+- Routine writes, doc edits, small refactors → Extra High thinking effort, Max Mode off.
+- Migrating the index page, the calculator, or any cross-cutting refactor → Extra High + Max Mode on (large context window needed).
+- Bug-hunter scans → Medium effort is sufficient.

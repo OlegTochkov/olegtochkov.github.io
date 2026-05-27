@@ -1,0 +1,565 @@
+[
+  {
+    "outputFile": "page94752316.html",
+    "pageId": "94752316",
+    "layout": "layouts/clean.html",
+    "title": "Клининг | Уборка квартир в Минске | Клининговая компания Clean Logic",
+    "description": "Уборка квартир и домов в Минске от 55 BYN. Аккуратный клининг для частных клиентов. Прозрачные цены, расчёт стоимости онлайн ✦ Скидка 15% на все услуги до 18.03",
+    "canonical": "https://cleanlogic.by",
+    "ogUrl": "https://cleanlogic.by",
+    "ogImage": "https://cleanlogic.by/images/tild3436-6165-4130-b536-316339623366___.png",
+    "noindex": false
+  },
+  {
+    "outputFile": "page96390686.html",
+    "pageId": "96390686",
+    "bundleTimestamp": "1773603160",
+    "title": "Калькулятор стоимости",
+    "description": "",
+    "canonical": "https://cleanlogic.by/calculator",
+    "ogUrl": "https://cleanlogic.by/calculator",
+    "noindex": true,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-zero-tooltip-1.1.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page98809316.html",
+    "pageId": "98809316",
+    "bundleTimestamp": "1772926577",
+    "title": "Подтверждение заказа",
+    "description": "",
+    "canonical": "https://cleanlogic.by/order",
+    "ogUrl": "https://cleanlogic.by/order",
+    "noindex": true,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page111068156.html",
+    "pageId": "111068156",
+    "bundleTimestamp": "1772288075",
+    "title": "Политика конфиденциальности",
+    "description": "",
+    "canonical": "https://cleanlogic.by/privacy",
+    "ogUrl": "https://cleanlogic.by/privacy",
+    "noindex": true,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "quill-table.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116382096.html",
+    "pageId": "116382096",
+    "bundleTimestamp": "1772288075",
+    "title": "Клининг после ремонта в Минске | Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/repair",
+    "ogUrl": "https://cleanlogic.by/repair",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116389996.html",
+    "pageId": "116389996",
+    "bundleTimestamp": "1772288075",
+    "title": "Генеральная уборка квартиры в Минске | Клининг Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/general-cleaning",
+    "ogUrl": "https://cleanlogic.by/general-cleaning",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116402906.html",
+    "pageId": "116402906",
+    "bundleTimestamp": "1772288075",
+    "title": "Мойка окон в Минске | Мытьё окон после ремонта | Клининг Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/windows",
+    "ogUrl": "https://cleanlogic.by/windows",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116410156.html",
+    "pageId": "116410156",
+    "bundleTimestamp": "1772288075",
+    "title": "Уборка после смерти в Минске | Клининговая компания Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/posle-smerti",
+    "ogUrl": "https://cleanlogic.by/posle-smerti",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116411816.html",
+    "pageId": "116411816",
+    "bundleTimestamp": "1772288075",
+    "title": "Уборка после пожара в Минске | Клининговая компания Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/posle-pojara",
+    "ogUrl": "https://cleanlogic.by/posle-pojara",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116412736.html",
+    "pageId": "116412736",
+    "bundleTimestamp": "1772288075",
+    "title": "Уборка после потопа в Минске | Клининговая компания Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/posle-potopa",
+    "ogUrl": "https://cleanlogic.by/posle-potopa",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116414506.html",
+    "pageId": "116414506",
+    "bundleTimestamp": "1772288075",
+    "title": "Химчистка мягкой мебели в Минске | Чистка мебели на дому | Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/mebel",
+    "ogUrl": "https://cleanlogic.by/mebel",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116421906.html",
+    "pageId": "116421906",
+    "bundleTimestamp": "1772288075",
+    "title": "Химчистка диванов в Минске | Чистка дивана на дому | Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/divany",
+    "ogUrl": "https://cleanlogic.by/divany",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116426206.html",
+    "pageId": "116426206",
+    "bundleTimestamp": "1772288075",
+    "title": "Химчистка ковра в Минске | Чистка ковролина на дому | Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/carpet-cleaning",
+    "ogUrl": "https://cleanlogic.by/carpet-cleaning",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116426506.html",
+    "pageId": "116426506",
+    "bundleTimestamp": "1772288075",
+    "title": "Химчистка матраса в Минске | Выездная чистка матрасов | Клининг Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/matrasy",
+    "ogUrl": "https://cleanlogic.by/matrasy",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116427516.html",
+    "pageId": "116427516",
+    "bundleTimestamp": "1772288075",
+    "title": "Поддерживающая уборка квартир в Минске | Клининг Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/supportive",
+    "ogUrl": "https://cleanlogic.by/supportive",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116428216.html",
+    "pageId": "116428216",
+    "bundleTimestamp": "1772288075",
+    "title": "Стандартная уборка | Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/standart",
+    "ogUrl": "https://cleanlogic.by/standart",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116428536.html",
+    "pageId": "116428536",
+    "bundleTimestamp": "1772288075",
+    "title": "Срочная уборка квартир и домов в Минске | Быстрая уборка | Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/srochnaya",
+    "ogUrl": "https://cleanlogic.by/srochnaya",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css",
+      "tilda-forms-1.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-paint-icons.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-forms-1.0.min.js",
+      "tilda-zero-forms-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page116428896.html",
+    "pageId": "116428896",
+    "bundleTimestamp": "1772288075",
+    "title": "Цены на клининг в Минске | Клининговая компания Clean Logic",
+    "description": "",
+    "canonical": "https://cleanlogic.by/price",
+    "ogUrl": "https://cleanlogic.by/price",
+    "noindex": false,
+    "extraCss": [
+      "tilda-animation-2.0.min.css",
+      "tilda-cards-1.0.min.css",
+      "tilda-popup-1.1.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-cards-1.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-popup-1.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page119494386.html",
+    "pageId": "119494386",
+    "bundleTimestamp": "1772288075",
+    "title": "Шапка",
+    "description": "",
+    "canonical": "https://cleanlogic.by/page119494386.html",
+    "ogUrl": "https://cleanlogic.by/page119494386.html",
+    "ogImage": "images/tild6637-3533-4465-b865-383435376661__-__resize__504x__new_logo_1.png",
+    "noindex": true,
+    "extraCss": [
+      "tilda-animation-2.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page119494686.html",
+    "pageId": "119494686",
+    "bundleTimestamp": "1772288080",
+    "title": "Подвал",
+    "description": "",
+    "canonical": "https://cleanlogic.by/page119494686.html",
+    "ogUrl": "https://cleanlogic.by/page119494686.html",
+    "ogImage": "images/tild6335-3837-4437-a265-333561303733__-__resize__504x__1.png",
+    "noindex": true,
+    "extraCss": [],
+    "extraJs": [
+      "tilda-zero-1.1.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  },
+  {
+    "outputFile": "page123781366.html",
+    "pageId": "123781366",
+    "bundleTimestamp": "1772561134",
+    "title": "qr",
+    "description": "",
+    "canonical": "https://cleanlogic.by/qr",
+    "ogUrl": "https://cleanlogic.by/qr",
+    "noindex": true,
+    "extraCss": [
+      "tilda-animation-2.0.min.css"
+    ],
+    "extraJs": [
+      "tilda-animation-2.0.min.js",
+      "tilda-menu-1.0.min.js",
+      "tilda-zero-1.1.min.js",
+      "tilda-zero-scale-1.0.min.js",
+      "tilda-skiplink-1.0.min.js",
+      "tilda-events-1.0.min.js",
+      "tilda-buyer-dashboard-1.0.min.js"
+    ]
+  }
+]

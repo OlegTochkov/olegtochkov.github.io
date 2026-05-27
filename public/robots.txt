@@ -1,0 +1,21 @@
+User-Agent: *
+Disallow: /page96390686.html
+Disallow: /calculator
+Disallow: /page98809316.html
+Disallow: /order
+Disallow: /page111068156.html
+Disallow: /privacy
+Disallow: /page123781366.html
+Disallow: /qr
+Disallow: /page119494386.html
+Disallow: /page119494686.html
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+
+Sitemap: https://cleanlogic.by/sitemap.xml

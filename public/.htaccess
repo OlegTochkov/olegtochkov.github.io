@@ -1,0 +1,29 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex index.html
+
+RewriteEngine On
+
+RewriteRule ^calculator/?$       calculator.html       [NC,L]
+RewriteRule ^repair/?$           repair.html           [NC,L]
+RewriteRule ^order/?$            order.html            [NC,L]
+RewriteRule ^srochnaya/?$        srochnaya.html        [NC,L]
+RewriteRule ^supportive/?$       supportive.html       [NC,L]
+RewriteRule ^privacy/?$          privacy.html          [NC,L]
+RewriteRule ^standart/?$         standart.html         [NC,L]
+RewriteRule ^qr/?$               qr.html               [NC,L]
+RewriteRule ^price/?$            price.html            [NC,L]
+RewriteRule ^general-cleaning/?$ general-cleaning.html [NC,L]
+RewriteRule ^windows/?$          windows.html          [NC,L]
+RewriteRule ^posle-smerti/?$     posle-smerti.html     [NC,L]
+RewriteRule ^posle-pojara/?$     posle-pojara.html     [NC,L]
+RewriteRule ^posle-potopa/?$     posle-potopa.html     [NC,L]
+RewriteRule ^mebel/?$            mebel.html            [NC,L]
+RewriteRule ^divany/?$           divany.html           [NC,L]
+RewriteRule ^carpet-cleaning/?$  carpet-cleaning.html  [NC,L]
+RewriteRule ^matrasy/?$          matrasy.html          [NC,L]
+
+<IfModule mod_headers.c>
+    Header unset X-Frame-Options
+</IfModule>

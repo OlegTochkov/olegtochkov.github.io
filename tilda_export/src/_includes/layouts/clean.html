@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    {%- if description %}
+    <meta name="description" content="{{ description }}" />
+    {%- endif %}
+    <meta property="og:url" content="{{ ogUrl or canonical }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description or '' }}" />
+    <meta property="og:type" content="website" />
+    {%- if ogImage %}
+    <meta property="og:image" content="{{ ogImage }}" />
+    {%- endif %}
+    <link rel="canonical" href="{{ canonical }}" />
+    <meta name="format-detection" content="telephone=no" />
+    {%- if noindex %}
+    <meta name="robots" content="noindex" />
+    {%- endif %}
+    <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fonts-tildasans.css" />
+    <link rel="stylesheet" href="css/home.css?v={{ site.cssVersion | default('1') }}" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ site.gtmId }}');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtmId }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{ body_content | safe }}
+    <script src="js/home.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "cleanlogic-by",
+  "version": "1.0.0",
+  "description": "cleanlogic.by — static site with Python Jinja2 build system",
+  "private": true,
+  "scripts": {
+    "build": "python3 build.py",
+    "check": "python3 check.py",
+    "serve": "python3 -m http.server 8000 --directory public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devNotes": {
+    "buildSystem": "Python 3 + Jinja2 (see build.py and Makefile)",
+    "templates": "src/_includes/layouts/base.html",
+    "pageData": "src/_data/pages.json",
+    "siteConfig": "src/_data/site.json",
+    "output": "public/ — deploy this directory to the web server",
+    "futureUpgrade": "migrate to Eleventy (11ty) when Node.js is available: npm install @11ty/eleventy"
+  }
+}

@@ -1,0 +1,63 @@
+---
+alwaysApply: true
+---
+
+# Tilda migration rules
+
+The project is being migrated from Tilda Publishing to a custom Astro stack. The goal is **zero Tilda traces** in the final product because:
+
+1. The Tilda User Agreement forbids using exported code outside the Tilda platform.
+2. The site may be sold in the future to another cleaning company. No third-party copyright material may remain.
+
+See `docs/PROJECT_OVERVIEW.md` for the full legal context.
+
+## Read-only zones
+
+- `tilda_export/` — original Tilda export archive. **Never modify, delete, or create files inside.** It is a read-only reference for understanding what the original site looked like and how it worked. Use it for inspection only.
+- `public/` (current state) — a working copy that is still being de-Tilda-ified. Modifications happen here only as part of the active migration phase and only after explicit instructions from the user.
+
+## Forbidden patterns in new code
+
+Any new file, class, ID, variable, function, comment, or asset must NOT contain:
+
+- The substring `tilda` in any case (filenames, class names, variable names, comments).
+- The CSS class prefix `t-` (e.g., `t-block`, `t-col`, `t-rec`).
+- The CSS class prefix `t396__` or any `tNNN__` numeric pattern.
+- Image filenames starting with `tild` followed by a hash (e.g., `tild6638-3230-...png`).
+- The font name `TildaSans` — replaced by `Onest`.
+- Script tags or imports referencing `tilda-*.js`, `tilda-blocks-*`, `tilda-animation-*`, `tilda-calc-*`, etc.
+
+When migrating a page from `public/` into Astro source, rename all of the above before integrating.
+
+## Pre-deletion documentation policy
+
+Before deleting any Tilda-licensed JS or CSS file, create a description in `docs/legacy/<original-filename>.md` (Russian) containing:
+
+- Original filename and full path.
+- What the file did, in plain Russian (2–3 sentences for trivial files, several paragraphs for complex ones like the calculator).
+- Functions, selectors, or behaviors it exposed.
+- Where it was used (which HTML pages).
+- Dependencies (e.g., jQuery, other Tilda scripts).
+- What the new Astro/vanilla equivalent is, or "не требуется" if the functionality is dropped.
+
+**Only after the description exists may the original file be deleted.**
+
+This applies to:
+
+- All `tilda-*.js` and `tilda-*.css` files under `public/js/` and `public/css/`.
+- The `fonts-tildasans.css` file.
+- Any inline `<script>` block extracted from a Tilda-generated HTML page if it contains non-trivial logic.
+
+Trivial inline scripts (analytics snippets, tag pixels) do not require a legacy doc.
+
+## Image policy
+
+- Image filenames with Tilda hash patterns (e.g., `tild6638-3230-...png`) must be renamed to human-readable names (e.g., `favicon.png`, `logo.png`, `hero-bg.jpg`) before being moved into the Astro `public/`.
+- Image content (the binary pixel data) is preserved. Do not regenerate, recompress, or modify image contents.
+- All references to renamed images in HTML/CSS must be updated atomically with the rename.
+
+## Verification
+
+The `bug-hunter` subagent (`.cursor/agents/bug-hunter.md`) scans the project for Tilda residue and reports findings. Run it after each migration phase.
+
+A migration phase is considered complete only when bug-hunter reports zero Tilda references in the phase's scope.

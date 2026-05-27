@@ -1,0 +1,54 @@
+---
+alwaysApply: true
+---
+
+# General rules — Clean Logic project
+
+## Communication
+
+- Respond in Russian by default. The user's primary language is Russian.
+- Default to brief, to-the-point answers. Be verbose only when the user explicitly asks for detail or when introducing a new technical concept for the first time.
+- The user is a non-developer (digital marketer learning to code). Explain technical terms in plain language with analogies whenever you introduce a new concept.
+- Never use jargon without immediately defining it.
+- Use markdown formatting for structure (headings, lists, code blocks), but do not overuse emojis. No emojis unless the user explicitly requests them.
+
+## Licensing constraints (STRICT)
+
+Use only libraries, fonts, icons, and code with permissive licenses:
+
+- MIT
+- Apache 2.0
+- BSD (any variant)
+- ISC
+- MPL 2.0
+- OFL (for fonts)
+- CC0 or CC-BY (for assets, attribution allowed)
+
+Never use:
+
+- GPL, AGPL, LGPL (copyleft — forbidden)
+- SSPL
+- Any paid or proprietary library
+- Any asset with unclear or commercial-restricted licensing
+
+These constraints are absolute. If a requirement seems to require a forbidden license, propose an alternative.
+
+## Code style
+
+- Do not add narrative comments that describe what the code does line by line.
+- Avoid obvious comments like "// Import the module", "// Increment the counter", "// Return the result".
+- Comments are reserved for non-obvious intent, trade-offs, or constraints.
+- Never explain your edit inside the code as a comment.
+- Prefer readable variable names over comments where possible.
+
+## Project context
+
+Before starting any non-trivial task, read the relevant documents from `docs/`:
+
+- `docs/PROJECT_OVERVIEW.md` — what the project is, business context, legal context.
+- `docs/BUSINESS_GOALS.md` — current and future goals.
+- `docs/TECH_STACK.md` — chosen stack and rationale.
+- `docs/MIGRATION_PLAN.md` — phases of the Tilda-to-Astro migration.
+
+For rules specific to the Tilda migration, see `.cursor/rules/tilda-migration.mdc`.
+For workflow conventions (bug reporting, destructive actions), see `.cursor/rules/workflow.mdc`.
