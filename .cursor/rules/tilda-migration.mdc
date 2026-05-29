@@ -9,7 +9,7 @@ The project is being migrated from Tilda Publishing to a custom Astro stack. The
 1. The Tilda User Agreement forbids using exported code outside the Tilda platform.
 2. The site may be sold in the future to another cleaning company. No third-party copyright material may remain.
 
-See `docs/PROJECT_OVERVIEW.md` for the full legal context.
+See `docs/business/PROJECT_OVERVIEW.md` for the full legal context.
 
 ## Read-only zones
 

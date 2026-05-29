@@ -1,0 +1,82 @@
+---
+alwaysApply: false
+description: "Use when writing, editing, or reviewing any copy for the Clean Logic website: page text, headings, CTAs, button labels, form labels, email templates, ad copy."
+---
+
+# Copywriting rules — Clean Logic
+
+Apply these rules whenever writing or editing text intended for the website, ads, or any user-facing communication.
+
+## Addressing the user
+
+Always use «вы» with a **lowercase** «в».
+
+- Correct: «мы приедем в удобное для вас время»
+- Wrong: «мы приедем в удобное для Вас время»
+
+The capitalised «Вы» sounds bureaucratic and creates unwanted distance. Exception: only if the user explicitly requests capitalised «Вы» for a specific piece.
+
+## Forbidden phrases
+
+Never use these. They are generic placeholders that fit any company and say nothing specific:
+
+- быстро и качественно
+- команда профессионалов
+- индивидуальный подход
+- доступные цены / лучшие цены
+- качественная уборка
+- сделаем всё за вас
+- гарантируем качество
+- чистота — залог здоровья
+- профессиональный клининг
+- современные технологии уборки
+- экологичная химия *(unless it is a confirmed, documented differentiator)*
+- мы любим чистоту
+- ваш надёжный партнёр
+- клининг под ключ
+
+Anti-test: if the phrase can be copy-pasted onto any competitor's site unchanged — do not use it.
+
+## Preferred language patterns
+
+Use specific, verifiable, concrete statements:
+
+- понятный процесс
+- фиксированная стоимость
+- без скрытых доплат
+- приезжаем в согласованное время
+- контроль качества
+- аккуратная работа
+- можно заказать онлайн
+- системный подход к уборке
+
+## Specificity over adjectives
+
+Replace vague adjectives with concrete data:
+
+- Not «быстро» → «за 3–4 часа»
+- Not «доступно» → «от 55 BYN»
+- Not «тщательно» → «убираем в том числе за мебелью и внутри шкафов»
+- Not «наши мастера» → «бригада из 2 человек»
+
+## One CTA per block
+
+Do not place two equal-weight calls to action in the same section. Pick the one that matters most at this point in the funnel. The secondary action, if needed, must be visually subordinate.
+
+## Brevity
+
+Users scan, they do not read. Maximum 2–3 lines per copy block. If more is needed, break into a bulleted list.
+
+## Expectation management
+
+Texts must set realistic expectations: what is included, what is not, what the result looks like. A customer with inflated expectations is a guaranteed conflict. The page «что входит в уборку» is a direct response to this.
+
+## УТП status
+
+As of May 2026, the company УТП (unique selling proposition) is not formulated. Until it is, do not make unique claims about the company that cannot be substantiated. Write about the process and the result, not about being «the best» or «unique».
+
+## Reference documents
+
+For full context, read before writing:
+- `docs/marketing/tone-of-voice.md`
+- `docs/marketing/audience.md`

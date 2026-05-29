@@ -33,7 +33,7 @@ Before performing any of the following, ask the user for explicit confirmation:
 - Deleting files or directories.
 - Renaming many files at once (>5).
 - Running `git reset`, `git rebase`, `git push --force`, or any command that rewrites history.
-- Installing new dependencies that are not yet documented in `docs/TECH_STACK.md`.
+- Installing new dependencies that are not yet documented in `docs/technical/TECH_STACK.md`.
 - Running formatters, linters with auto-fix, or codemods that modify many files at once.
 - Changing the project configuration (`astro.config.mjs`, `package.json` scripts, `tsconfig.json`).
 
@@ -41,9 +41,11 @@ Before performing any of the following, ask the user for explicit confirmation:
 
 At the start of any non-trivial task, consult the relevant documents:
 
-- For migration work: `docs/MIGRATION_PLAN.md`, `.cursor/rules/tilda-migration.mdc`.
-- For technical decisions: `docs/TECH_STACK.md`.
-- For business context: `docs/PROJECT_OVERVIEW.md`, `docs/BUSINESS_GOALS.md`.
+- For migration work: `docs/technical/MIGRATION_PLAN.md`, `.cursor/rules/tilda-migration.mdc`.
+- For technical decisions: `docs/technical/TECH_STACK.md`.
+- For business context: `docs/business/PROJECT_OVERVIEW.md`, `docs/business/BUSINESS_GOALS.md`.
+- For design work: `docs/design/` and `.cursor/rules/design.mdc`.
+- For copy and marketing: `docs/marketing/` and `.cursor/rules/copywriting.mdc`.
 - For deleted Tilda scripts: `docs/legacy/`.
 - For terminology: `docs/glossary.md`.
 
@@ -51,10 +53,12 @@ If you find that a document is missing context needed for the task, propose an u
 
 ## Language convention
 
-- Cursor configuration (`.cursor/rules/*.mdc`, `.cursor/agents/*.md`) — **English**.
-- Business docs (`docs/PROJECT_OVERVIEW.md`, `docs/BUSINESS_GOALS.md`, `docs/glossary.md`, `docs/legacy/*.md`) — **Russian**.
-- Technical docs (`docs/TECH_STACK.md`, `docs/MIGRATION_PLAN.md`, `docs/ROADMAP.md`) — **English**.
-- Root `README.md` — **English**.
+- Cursor configuration (`.cursor/rules/*.mdc`, `.cursor/agents/*.md`, `.cursor/commands/*.md`) — **English**.
+- Business docs (`docs/business/*`, `docs/glossary.md`, `docs/legacy/*.md`) — **Russian**.
+- Technical docs (`docs/technical/*`) — **English**.
+- Marketing docs (`docs/marketing/*`) — **Russian**.
+- Design docs: brand/philosophy (`docs/design/visual-identity.md`, `docs/design/do-and-dont.md`) — **Russian**; technical tokens (`docs/design/typography.md`, `spacing-grid.md`, `components.md`, `motion.md`) — **English**.
+- Root `README.md` and `AGENTS.md` — **English**.
 - Commit messages — **English**, concise, present tense imperative ("Add header component", not "Added header component").
 
 ## Solo developer context
@@ -66,13 +70,13 @@ This project is maintained by a single developer (Maxim) working through Cursor.
 
 ## Phase-based work
 
-Migration progresses through phases defined in `docs/MIGRATION_PLAN.md`. At the start of each phase, the user creates a detailed sub-plan via Cursor's Plan mode. Do not jump ahead to a later phase without explicit instruction.
+Migration progresses through phases defined in `docs/technical/MIGRATION_PLAN.md`. At the start of each phase, the user creates a detailed sub-plan via Cursor's Plan mode. Do not jump ahead to a later phase without explicit instruction.
 
 Each phase ends with:
 
 1. A `bug-hunter` scan with zero critical findings in scope.
 2. A Git commit summarizing what changed.
-3. A brief status update in `docs/MIGRATION_PLAN.md` if needed.
+3. A brief status update in `docs/technical/MIGRATION_PLAN.md` if needed.
 
 ## Effort and Max Mode guidance
 

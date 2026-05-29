@@ -1,0 +1,156 @@
+# Migration Plan — Tilda to Astro
+
+High-level phases of the Clean Logic site migration. Each phase has a high-level scope here; a detailed sub-plan is created at the start of the phase via Cursor's Plan mode.
+
+## Phase 0 — Documentation foundation (CURRENT)
+
+Build documentation and Cursor infrastructure. Initialize Git locally. No code migration yet.
+
+**Deliverables:**
+
+- `.cursor/rules/*.mdc` (general, tilda-migration, workflow) and `.cursor/agents/bug-hunter.md`.
+- `docs/` populated with overview, business goals, tech stack, migration plan, roadmap, glossary.
+- `docs/legacy/` initialized with README and `.gitkeep`.
+- Root `README.md` and `.gitignore`.
+- `git init` and first commit.
+
+**Exit criterion:** First commit exists, all docs reviewed by Maxim.
+
+## Phase 1 — Astro setup
+
+Install Node.js LTS and Astro on macOS. Scaffold project structure (`src/`, `astro.config.mjs`, `package.json`, `tsconfig.json`). Verify the dev server runs.
+
+**Pre-conditions:** Phase 0 complete.
+
+**Deliverables:**
+
+- Node.js LTS installed system-wide.
+- `package.json` with Astro and its dependencies, all permissively licensed.
+- `astro.config.mjs` configured for static output.
+- Placeholder `src/pages/index.astro` shows "Hello from Astro".
+- `npm run dev` works; usage documented in `README.md`.
+- Git commit: `Set up Astro project`.
+
+## Phase 2 — Shared layout and design tokens
+
+Create the shared layout, header, footer, and base CSS. This is the most-reused part of the site — done once, applied everywhere.
+
+**Deliverables:**
+
+- `src/layouts/BaseLayout.astro` — common HTML structure, meta tags, GTM and Yandex.Metrica snippets.
+- `src/components/Header.astro` and `src/components/Footer.astro` (including mobile menu) — 1:1 with original.
+- `src/styles/global.css` — design tokens (colors, typography, spacing).
+- Onest font self-hosted in `public/fonts/`.
+- Placeholder page using the layout, visually identical to original header and footer on Tilda.
+- Bug-hunter scan: zero Tilda references in the layout files.
+
+## Phase 3 — Index page
+
+**Note:** `public/index.html` has already been substantially rewritten prior to the Astro migration. It uses custom class names (e.g. `site-header__`, `mobile-menu__`) and does not contain the bulk of Tilda-generated markup found in other pages. Phase 3 is therefore an **audit-and-integrate** phase, not a rewrite-from-scratch.
+
+**Step 1 — Bug-hunter audit of the current index page.** Run the bug-hunter subagent scoped to `public/index.html`, `public/css/home.css`, and `public/js/home.js`. Identify any remaining Tilda residue, broken references, or issues. Review findings before proceeding.
+
+**Step 2 — Integrate into Astro layout.** Wrap the existing index content into `src/pages/index.astro` using the shared `BaseLayout`, `Header`, and `Footer` components built in Phase 2.
+
+**Step 3 — Clean up any residue found in Step 1.** Document any deleted scripts in `docs/legacy/` per the pre-deletion policy.
+
+**Deliverables:**
+
+- `src/pages/index.astro` rendered identically to the current `public/index.html`.
+- All section CSS confirmed to use clean, non-Tilda class names.
+- Any remaining Tilda scripts documented in `docs/legacy/` and replaced.
+- Bug-hunter scan: zero Tilda references on this page.
+
+## Phase 4 — Cost calculator
+
+The most complex single feature. The Tilda JS calculator (`tilda-calc-1.0.min.js` plus page-specific configs) is fully rewritten in vanilla JavaScript.
+
+**Deliverables:**
+
+- `docs/legacy/tilda-calc-1.0.min.js.md` — detailed description of the original calculator's behavior (so logic is fully understood before deletion).
+- `src/scripts/calculator.js` (or TypeScript) — fresh implementation.
+- `src/pages/calculator.astro` — UI identical to original, internally clean.
+- Manual verification: every option combination produces the same price as the original Tilda calculator.
+
+## Phase 5 — Remaining pages
+
+Migrate the remaining pages from `public/`:
+
+- Cleaning services: `general-cleaning.html`, `standart.html`, `srochnaya.html`, `supportive.html`.
+- Post-event cleaning: `repair.html`, `posle-pojara.html`, `posle-potopa.html`, `posle-smerti.html`.
+- Textile cleaning: `divany.html`, `matrasy.html`, `mebel.html`, `carpet-cleaning.html`.
+- Window cleaning: `windows.html`.
+- Other: `price.html`, `privacy.html`, `404.html`, `qr.html`, `order.html`.
+- Legacy fragments: `header.html` and `footer.html` (already migrated structurally in phase 2; verify all elements transferred).
+
+Service pages share a common template — implement as a parameterized component to avoid duplication.
+
+**Deliverables:**
+
+- Each page exists in `src/pages/`.
+- All pages share the base layout, header, and footer.
+- Each page passes a bug-hunter scan.
+
+## Phase 6 — Forms and Telegram integration
+
+Build the form-handling endpoint that receives submissions and forwards them to a Telegram bot.
+
+**Deliverables:**
+
+- Telegram bot created and configured.
+- Serverless function (or Node endpoint) at `/api/lead` accepts POST and forwards to Telegram.
+- Forms on the order page, contact section, calculator, and CTAs submit to this endpoint.
+- End-to-end test: real lead arrives in the Telegram chat.
+- Belarus personal-data law basics: explicit consent checkbox, link to privacy policy.
+
+## Phase 7 — SEO and metadata
+
+Carry over and verify all SEO assets.
+
+**Deliverables:**
+
+- `sitemap.xml` regenerated by Astro's sitemap integration.
+- `robots.txt` ported and validated.
+- `<title>`, `<meta name="description">`, OG tags, Twitter cards on every page.
+- Canonical URLs.
+- Schema.org markup (LocalBusiness, Service) where it exists in the original.
+- GTM and Yandex.Metrica fire on every page.
+
+## Phase 8 — Staging deployment
+
+Deploy the Astro site to a staging environment.
+
+**Deliverables:**
+
+- Hosting chosen (Vercel, Netlify, or custom).
+- Staging URL accessible to Maxim.
+- Manual QA: Maxim opens the site on desktop and mobile, verifies all pages and form submissions.
+- Bug-hunter full project scan: zero critical issues.
+
+## Phase 9 — Production switchover
+
+Switch DNS from Tilda hosting to the new hosting. Original Tilda site is decommissioned.
+
+**Deliverables:**
+
+- DNS A/CNAME records updated.
+- Tilda site deactivated or put in preserve mode.
+- 24-hour monitoring window: analytics traffic verified, no broken pages, no missed leads.
+- Final commit tagged `v1.0`.
+
+**Phase 9 completes the migration.** Subsequent work lives in [ROADMAP.md](ROADMAP.md).
+
+## Cross-phase rules (always on)
+
+- Bugs and UX issues are reported, not fixed (see `.cursor/rules/workflow.mdc`).
+- Every removed Tilda script gets a corresponding `docs/legacy/<name>.md` first.
+- UI fidelity is 1:1 with the original Tilda site.
+- Every phase ends with a Git commit and a short summary in the commit message.
+- Detailed sub-plans for each phase are created via Cursor Plan mode at the start of that phase, not upfront.
+- Bug-hunter is run at the end of each phase.
+
+## See also
+
+- [TECH_STACK.md](TECH_STACK.md) — chosen stack and rationale.
+- [ROADMAP.md](ROADMAP.md) — post-migration features.
+- [../business/PROJECT_OVERVIEW.md](../business/PROJECT_OVERVIEW.md) — business and legal context.

@@ -6,7 +6,7 @@ This repository contains the in-progress migration of the **cleanlogic.by** clea
 
 **Phase 0:** Documentation foundation. The site itself is not yet migrated — the live site still runs on Tilda at https://cleanlogic.by.
 
-See [docs/MIGRATION_PLAN.md](docs/MIGRATION_PLAN.md) for the full phased plan.
+See [docs/technical/MIGRATION_PLAN.md](docs/technical/MIGRATION_PLAN.md) for the full phased plan.
 
 ## Why this exists
 
@@ -19,12 +19,13 @@ The Tilda User Agreement forbids using exported Tilda code outside the Tilda pla
 - **Node.js LTS** — toolchain.
 - **Git** — local version control (no GitHub on phase 1).
 
-See [docs/TECH_STACK.md](docs/TECH_STACK.md) for rationale.
+See [docs/technical/TECH_STACK.md](docs/technical/TECH_STACK.md) for rationale.
 
 ## Repository layout
 
 ```text
-.cursor/       Cursor IDE configuration (rules and subagents)
+AGENTS.md      Documentation navigation index (read first)
+.cursor/       Cursor IDE configuration (rules, subagents, commands)
 docs/          Project documentation (RU/EN mix; see docs/README.md)
 public/        Current site snapshot (Tilda-derived, being phased out)
 tilda_export/  Original Tilda export archive (read-only reference)
@@ -33,10 +34,11 @@ serve.py       Legacy local server (will be replaced by `npm run dev`)
 
 ## Where to start
 
-1. Read [docs/README.md](docs/README.md) for the documentation map.
-2. Read [docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md) for business and legal context.
-3. Read [docs/MIGRATION_PLAN.md](docs/MIGRATION_PLAN.md) for the phased migration plan.
-4. Read [docs/glossary.md](docs/glossary.md) if any term is unfamiliar.
+1. Read [AGENTS.md](AGENTS.md) for the documentation navigation index.
+2. Read [docs/README.md](docs/README.md) for the documentation map.
+3. Read [docs/business/PROJECT_OVERVIEW.md](docs/business/PROJECT_OVERVIEW.md) for business and legal context.
+4. Read [docs/technical/MIGRATION_PLAN.md](docs/technical/MIGRATION_PLAN.md) for the phased migration plan.
+5. Read [docs/glossary.md](docs/glossary.md) if any term is unfamiliar.
 
 ## Licensing
 

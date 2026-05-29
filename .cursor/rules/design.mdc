@@ -1,0 +1,41 @@
+---
+alwaysApply: false
+description: "Use when working on UI, styling, layout, visual design, CSS, components, colors, typography, spacing, icons, or animations for the Clean Logic website."
+---
+
+# Design rules — Clean Logic
+
+When doing any visual/UI work, read the design documentation first. It is built from the real, approved CSS (`public/css/home.css`) and confirmed against screenshots — it is not invented.
+
+## Read before designing
+
+- `docs/design/do-and-dont.md` — the master checklist (RU). Always consult this.
+- `docs/design/visual-identity.md` — brand character, color palette, gradient policy (RU).
+- `docs/design/typography.md` — font, sizes, weights (EN).
+- `docs/design/spacing-grid.md` — container, spacing scale, breakpoints (EN).
+- `docs/design/components.md` — buttons, forms, cards, header specs (EN).
+- `docs/design/motion.md` — transitions and allowed animations (EN).
+
+Visual references: `docs/design/screenshots/` (current site), `docs/design/anti-references/` and `docs/design/good-bad/` (what not to do).
+
+## Core principles (summary — full rules in do-and-dont.md)
+
+- One main idea and one primary CTA per screen.
+- Good design is removal: trust whitespace, do not fill every corner.
+- Use the documented tokens (colors, type scale, spacing, radii) — never invent new ones without updating the docs.
+- Gradients ONLY on primary CTA buttons and the price element. Flat colors everywhere else. No decorative/neon/"AI-looking" gradients.
+- One icon set, one style, brand palette.
+- Consistent spacing/radii/shadow across the whole site.
+- Mobile-first: 85% of traffic is mobile.
+- Every interactive element needs hover + focus states; forms give feedback.
+- Real photos with people; no stock "office people", no AI-generated art, no cosmic style.
+
+## Hard constraints
+
+- Font: replace `TildaSans` with `Onest` (OFL) at migration time — do not edit `home.css` font during documentation work.
+- Icons/fonts/assets: permissive licenses only (see `.cursor/rules/general.mdc`).
+- Preserve UI 1:1 with the current site (see `.cursor/rules/workflow.mdc`). Report visual bugs, do not silently "improve".
+
+## Anti-criterion before finishing
+
+Ask: (1) Is it clear in 3–5 seconds what this is and what to do? (2) Does everything serve one main action? (3) Does it look AI-generated (gradients/neon/cosmic/inconsistent)? If any answer is bad — redo.

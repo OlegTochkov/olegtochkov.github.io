@@ -43,12 +43,16 @@ These constraints are absolute. If a requirement seems to require a forbidden li
 
 ## Project context
 
+`AGENTS.md` in the project root is the navigation index for all documentation. Read it first when unsure where to look.
+
 Before starting any non-trivial task, read the relevant documents from `docs/`:
 
-- `docs/PROJECT_OVERVIEW.md` — what the project is, business context, legal context.
-- `docs/BUSINESS_GOALS.md` — current and future goals.
-- `docs/TECH_STACK.md` — chosen stack and rationale.
-- `docs/MIGRATION_PLAN.md` — phases of the Tilda-to-Astro migration.
+- `docs/business/PROJECT_OVERVIEW.md` — what the project is, business context, legal context.
+- `docs/business/BUSINESS_GOALS.md` — current and future goals.
+- `docs/technical/TECH_STACK.md` — chosen stack and rationale.
+- `docs/technical/MIGRATION_PLAN.md` — phases of the Tilda-to-Astro migration.
 
 For rules specific to the Tilda migration, see `.cursor/rules/tilda-migration.mdc`.
 For workflow conventions (bug reporting, destructive actions), see `.cursor/rules/workflow.mdc`.
+For anti-complexity and transparency, see `.cursor/rules/simplicity.mdc`.
+For design work, see `.cursor/rules/design.mdc`. For copy, see `.cursor/rules/copywriting.mdc`.

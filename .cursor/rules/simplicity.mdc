@@ -1,0 +1,97 @@
+---
+alwaysApply: true
+---
+
+# Simplicity and transparency
+
+The user is a non-developer (a marketer learning to code). Past experience: an AI over-engineered a simple page rewrite into something the user could not understand. The rules below prevent that. The goal is not "make it primitive" — it is "do not add pointless complexity, and explain anything beyond a vibe-coder's understanding."
+
+## KISS / YAGNI
+
+- Default to the simplest solution that satisfies the literal request.
+- Do not add files, abstractions, dependencies, config, patterns, type systems, validation layers, or test suites "just in case" or "for future scalability."
+- If two approaches work, pick the shorter/simpler one.
+- Create the minimum number of new files the task actually needs.
+- Good industry-standard code is welcome. Pointless complexity is not.
+
+## What counts as "standard" (do it without lengthy explanation)
+
+Files a non-technical user already understands:
+
+- HTML pages, CSS styles, JavaScript scripts, images, fonts.
+- `robots.txt`, `sitemap.xml`, `.htaccess`.
+- Astro components, layouts, pages.
+- Standard config files: `package.json`, `tsconfig.json`, `astro.config.mjs`.
+- Markdown docs.
+
+## What counts as "complex" (explain BEFORE doing)
+
+Explain first, then wait for "go", if any of these is true:
+
+- A file type the user likely does not understand: Python scripts, Makefiles, shell scripts, CI/CD files, non-standard configs, complex TypeScript abstractions, custom build tooling.
+- Adding a dependency not yet in `docs/technical/TECH_STACK.md`.
+- Creating more than 3 new files in one task.
+- Changing the structure of more than 3 existing files.
+- Introducing a new architectural pattern/abstraction that requires the user to learn a new term.
+- Anything that cannot be undone with a single `git revert`.
+
+Explanation format (short chat message, Russian):
+
+> "Сейчас сделаю X через Y. Альтернатива была Z — отказался, потому что W. ОК?"
+
+Do not start the complex action until the user confirms.
+
+## File header comments
+
+Every new file whose syntax allows comments gets a short Russian header at the top: what the file is and what it does. Examples:
+
+```css
+/*
+  Глобальные стили сайта: цвета, шрифты, базовая типографика.
+  Подключается в BaseLayout.astro.
+*/
+```
+
+```javascript
+/*
+  Логика мобильного меню: открытие/закрытие, блокировка прокрутки.
+  Используется в Header.astro.
+*/
+```
+
+For files that do not support comments (e.g. JSON), skip the header. Do not add a narrative header that just restates obvious code — keep it to purpose.
+
+## Explain every shell command before "Run"
+
+Before any shell command the user must confirm, write a short Russian description:
+
+```
+Команда: <command>
+Что делает: <one sentence>
+Что меняет: <files / folders>
+Категория: безопасно / обратимо / необратимо
+```
+
+For commands chained with `&&`, explain each step. Example:
+
+> Команда: `npm install astro`
+> Что делает: скачивает фреймворк Astro и кладёт его в node_modules.
+> Что меняет: package.json, package-lock.json, node_modules/.
+> Категория: обратимо (можно откатить удалением node_modules).
+
+## Complexity threshold table
+
+| Action | Explain first? |
+|---|---|
+| Edit a few lines in a file | No, just do it. |
+| Create a file from an agreed template | No. |
+| Run a safe command (`npm run dev`, `git status`, `ls`) | Describe in one line, no separate confirmation. |
+| Create more than 3 new files at once | Yes. |
+| Restructure 3+ existing files | Yes. |
+| Add an npm dependency | Yes. |
+| Introduce a new pattern / abstraction / new term | Yes. |
+| Irreversible action (`git reset --hard`, `rm -rf`, force push) | Yes, require explicit confirmation. |
+
+## Honesty about uncertainty
+
+If unsure whether the simple path is right, ask before doing. Never silently choose the complex path.
