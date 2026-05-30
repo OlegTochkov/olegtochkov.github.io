@@ -63,21 +63,45 @@ For files that do not support comments (e.g. JSON), skip the header. Do not add 
 
 ## Explain every shell command before "Run"
 
-Before any shell command the user must confirm, write a short Russian description:
+When the agent runs a terminal command, Cursor may show a **Run** button. The user must understand *why* before clicking — the permission dialog is not an explanation.
+
+**Order is mandatory (Russian, plain language):**
+
+1. **Зачем** — 1–2 sentences: what you want to learn or achieve, without jargon. If a technical term is unavoidable, define it in the same breath (e.g. «шестнадцатеричный вид — как отпечаток формата файла»).
+2. **Блок команды** — only after «Зачем»:
 
 ```
 Команда: <command>
 Что делает: <one sentence>
-Что меняет: <files / folders>
+Что меняет: <files / folders, or «ничего»>
 Категория: безопасно / обратимо / необратимо
 ```
 
-For commands chained with `&&`, explain each step. Example:
+**Forbidden before Run:**
+
+- A bare command with no «Зачем» (e.g. only `git status` or `xxd logo.png`).
+- «Разрешите / пж / approve» without the goal and block above.
+- Programmer shorthand as the only message (paths, flags, tool names) when the user did not ask for raw output.
+
+For commands chained with `&&`, explain each step in «Что делает» (or separate mini-blocks).
+
+**Example (read-only check):**
+
+> Хочу проверить, что файл действительно PNG, а не переименованный мусор: посмотрю первые байты в шестнадцатеричном виде. На диске ничего не меняю.
+>
+> Команда: `xxd -l 16 public/images/logo.png`
+> Что делает: показывает начало файла.
+> Что меняет: ничего.
+> Категория: безопасно.
+
+**Example (install):**
 
 > Команда: `npm install astro`
 > Что делает: скачивает фреймворк Astro и кладёт его в node_modules.
 > Что меняет: package.json, package-lock.json, node_modules/.
 > Категория: обратимо (можно откатить удалением node_modules).
+
+(Add a «Зачем» line before this block when the reason is not obvious from the chat.)
 
 ## Complexity threshold table
 
@@ -85,7 +109,7 @@ For commands chained with `&&`, explain each step. Example:
 |---|---|
 | Edit a few lines in a file | No, just do it. |
 | Create a file from an agreed template | No. |
-| Run a safe command (`npm run dev`, `git status`, `ls`) | Describe in one line, no separate confirmation. |
+| Run any terminal command (including `git status`, `ls`, `npm run dev`) | **Зачем** + command block; safe commands skip separate «ОК?» but never skip «Зачем». |
 | Create more than 3 new files at once | Yes. |
 | Restructure 3+ existing files | Yes. |
 | Add an npm dependency | Yes. |

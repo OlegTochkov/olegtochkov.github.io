@@ -15,7 +15,7 @@ Always-on:
 - `general.mdc` — language (Russian), chat titles in Russian, licensing (permissive only), code style, project context.
 - `workflow.mdc` — UI 1:1 fidelity, report-don't-fix bugs, confirm destructive actions, language conventions.
 - `tilda-migration.mdc` — zero Tilda traces, read-only `tilda_export/`, pre-deletion docs in `docs/legacy/`.
-- `simplicity.mdc` — anti-complexity, explain complex actions, translate shell commands, file header comments.
+- `simplicity.mdc` — anti-complexity, explain complex actions, **goal-first Russian text before every terminal Run**, file header comments.
 
 Context-triggered:
 
