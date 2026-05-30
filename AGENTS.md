@@ -12,7 +12,7 @@ Full context: [docs/business/PROJECT_OVERVIEW.md](docs/business/PROJECT_OVERVIEW
 
 Always-on:
 
-- `general.mdc` — language (Russian), licensing (permissive only), code style, project context.
+- `general.mdc` — language (Russian), chat titles in Russian, licensing (permissive only), code style, project context.
 - `workflow.mdc` — UI 1:1 fidelity, report-don't-fix bugs, confirm destructive actions, language conventions.
 - `tilda-migration.mdc` — zero Tilda traces, read-only `tilda_export/`, pre-deletion docs in `docs/legacy/`.
 - `simplicity.mdc` — anti-complexity, explain complex actions, translate shell commands, file header comments.
@@ -51,5 +51,5 @@ Context-triggered:
 - Never modify `tilda_export/` (read-only reference).
 - No "tilda" / "t-" / `tild...` hashes in new code.
 - Preserve UI 1:1; report bugs, do not silently fix.
-- Respond in Russian; explain new terms simply.
+- Respond in Russian; chat titles and labels in Russian; explain new terms simply.
 - Do not over-engineer; explain anything non-obvious before doing it.
