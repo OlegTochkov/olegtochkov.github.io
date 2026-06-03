@@ -1,11 +1,56 @@
 ---
 alwaysApply: false
-description: "Use when writing, editing, or reviewing any copy for the Clean Logic website: page text, headings, CTAs, button labels, form labels, email templates, ad copy."
+description: "Use when writing, editing, or reviewing user-facing copy: no competitor/third-party names; no insults, put-downs, negative hints, or «we are better» comparisons. Page text, CTAs, ads, emails."
+globs: public/**/*.html
 ---
 
 # Copywriting rules — Clean Logic
 
 Apply these rules whenever writing or editing text intended for the website, ads, or any user-facing communication.
+
+**Scope:** user-facing copy only. Internal docs (e.g. `docs/marketing/competitors.md`, design anti-references) may name competitors for analysis — do not copy that content onto the site.
+
+## Competitors and third parties (STRICT)
+
+Brand position: disparaging competitors or claiming superiority is not honorable. Write only about Clean Logic.
+
+### A. No names
+
+Never use in user-facing copy:
+
+- Competitor or third-party company names, brands, or domains (e.g. kitt.by, freshroom, getclean, ladyclean, tidy).
+- Any `.by` or other domain that identifies another business.
+
+Allowed: **Clean Logic**, cleanlogic.by, and facts about your own service without naming others.
+
+| Wrong | Right |
+|---|---|
+| «В отличие от Kitt» | «Без скрытых доплат» |
+| «Как у Freshroom, только дешевле» | «От 55 BYN» |
+| «На getclean.by так не делают» | «Приезжаем в согласованное время» |
+
+`docs/marketing/competitors.md` is for internal research only — **never copy names from it into site copy.**
+
+Exception: only if the user explicitly requests a named partner brand or a legally required third-party mention.
+
+### B. Honorable tone (no put-downs, no superiority claims)
+
+Never in user-facing copy:
+
+- Insult, demean, or mock competitors or the market.
+- Any negative statement about «them», even subtle: «у других бардак», «типичный дешёвый клининг», «шаблонные сайты конкурентов».
+- Comparisons that elevate Clean Logic: «мы лучше», «единственные честные», «в отличие от остальных», «не как у других» (when implying their weakness).
+- «We vs they» framing: «В отличие от конкурентов, у нас…»
+
+Allowed: concrete facts **about Clean Logic only** — process, price, what is included, how to order.
+
+| Wrong | Right |
+|---|---|
+| «В отличие от конкурентов, у нас нет скрытых доплат» | «Без скрытых доплат» |
+| «Мы лучший клининг в Минске» | «Клининг в Минске» + process facts |
+| «У других плохой сервис, у нас — нормальный» | «Приезжаем в согласованное время» |
+
+**Pre-delivery check:** no competitor names/domains; no «we vs they» comparisons; no negative adjectives about «others» or «the market».
 
 ## Addressing the user
 

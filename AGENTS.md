@@ -53,3 +53,4 @@ Context-triggered:
 - Preserve UI 1:1; report bugs, do not silently fix.
 - Respond in Russian; chat titles and labels in Russian; explain new terms simply.
 - Do not over-engineer; explain anything non-obvious before doing it.
+- User-facing copy: no competitor/third-party names; no insults, demeaning language, negative hints about competitors, or «we are better» claims (see `.cursor/rules/copywriting.mdc`).

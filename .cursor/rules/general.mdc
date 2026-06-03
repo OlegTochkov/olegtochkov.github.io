@@ -57,3 +57,7 @@ For rules specific to the Tilda migration, see `.cursor/rules/tilda-migration.md
 For workflow conventions (bug reporting, destructive actions), see `.cursor/rules/workflow.mdc`.
 For anti-complexity and transparency, see `.cursor/rules/simplicity.mdc`.
 For design work, see `.cursor/rules/design.mdc`. For copy, see `.cursor/rules/copywriting.mdc`.
+
+## User-facing copy (honorable tone)
+
+In site copy, ads, and client emails: never name competitors or other businesses; never insult, demean, or speak negatively about them (even subtly); never claim «we are better». Write only about Clean Logic. Details: `.cursor/rules/copywriting.mdc`.
